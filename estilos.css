@@ -1,0 +1,56 @@
+:root {
+    --fondo: #ffffff;
+    --texto: #1a1a1a;
+    --acento: #0070f3;
+    --gris: #f5f5f7;
+    --borde: #eaeaea;
+    --rojo: #ff4d4d;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+/* --- Layout Existente --- */
+nav { display: flex; justify-content: space-between; padding: 1.5rem 5%; border-bottom: 1px solid var(--borde); position: sticky; top: 0; background: white; z-index: 10; }
+.logotipo { font-weight: 800; font-size: 1.2rem; }
+.boton-carrito { background: var(--texto); color: white; padding: 0.6rem 1.2rem; border-radius: 25px; border: none; cursor: pointer; }
+
+header { padding: 4rem 5%; text-align: center; }
+.productos { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; padding: 0 5% 4rem; max-width: 1200px; margin: 0 auto; }
+
+.tarjeta { background: var(--gris); border-radius: 16px; padding: 1.5rem; transition: 0.3s; }
+.tarjeta:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.portada-tarjeta { height: 180px; background: #e0e0e2; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin-bottom: 1rem; }
+.precio { font-weight: 700; color: var(--acento); margin: 0.5rem 0; }
+
+.boton-agregar { width: 100%; padding: 0.8rem; border: 1px solid var(--texto); border-radius: 8px; cursor: pointer; background: white; font-weight: 600; }
+.boton-agregar:hover { background: var(--texto); color: white; }
+
+/* --- Carrito y Botón Eliminar --- */
+#panel-carrito { position: fixed; right: -400px; top: 0; width: 380px; height: 100vh; background: white; border-left: 1px solid var(--borde); transition: 0.4s; padding: 2rem; z-index: 100; display: flex; flex-direction: column; }
+#panel-carrito.activo { right: 0; }
+
+.item-carrito { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--borde); }
+.boton-quitar { background: none; border: none; color: var(--rojo); cursor: pointer; font-size: 0.8rem; font-weight: 600; }
+
+.fila-total { display: flex; justify-content: space-between; font-size: 1.2rem; margin: 1.5rem 0; }
+.boton-pagar { width: 100%; padding: 1rem; background: var(--acento); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+
+/* --- Modal de Pago --- */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: 200; align-items: center; justify-content: center; }
+.modal.activo { display: flex; }
+.contenido-pago { background: white; width: 90%; max-width: 450px; padding: 2.5rem; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+.grupo-input { margin-bottom: 1.2rem; display: flex; flex-direction: column; }
+.grupo-input label { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.4rem; color: #666; }
+.grupo-input input { padding: 0.8rem; border: 1px solid var(--borde); border-radius: 6px; font-size: 1rem; }
+.fila-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.resumen-final { background: var(--gris); padding: 1rem; border-radius: 8px; text-align: center; font-size: 1.2rem; font-weight: 800; margin-bottom: 1.5rem; }
+.boton-finalizar { width: 100%; padding: 1rem; background: #00ca72; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-bottom: 0.8rem; }
+.boton-cancelar { width: 100%; background: none; border: none; color: #666; cursor: pointer; }
