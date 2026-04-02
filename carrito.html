@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Carrito | Lumina</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-carrito.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logotipo">← Volver a la Tienda</a>
+    </nav>
+
+    <main class="contenedor-carrito">
+        <h2>Tu Selección de E-books</h2>
+        <div id="lista-carrito">
+            </div>
+
+        <div class="resumen-pago">
+            <h3>Resumen de Compra</h3>
+            <p>Total a pagar: <strong>$<span id="total-pago">0</span></strong></p>
+            <hr>
+            <h4>Datos de Pago</h4>
+            <form id="form-pago">
+                <input type="text" placeholder="Tarjeta Débito ó Crédito" required>
+                <input type="text" placeholder="Número de Tarjeta" maxlength="16" required>
+                <div style="display:flex; gap:10px;">
+                    <input type="text" placeholder="MM/AA" style="width:50%" required>
+                    <input type="text" placeholder="CVC" style="width:50%" required>
+                </div>
+                <button type="submit" class="boton-pagar">Confirmar Pago Seguro</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="logica-carrito.js"></script>
+</body>
+</html>
