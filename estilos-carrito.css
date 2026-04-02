@@ -1,0 +1,107 @@
+:root {
+    --fondo: #ffffff;
+    --texto: #1a1a1a;
+    --acento: #0070f3;
+    --gris-claro: #f5f5f7;
+    --borde: #eaeaea;
+    --rojo: #ff4d4d;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Contenedor Principal */
+.contenedor-carrito {
+    width: 100%;
+    max-width: 600px; /* Evita que se estire demasiado */
+    background: white;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+}
+
+/* Enlace Volver */
+nav a {
+    text-decoration: none;
+    color: var(--acento);
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* Lista de Productos */
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--borde);
+}
+
+.boton-quitar {
+    background: none;
+    border: none;
+    color: var(--rojo);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Resumen de Pago */
+.resumen-pago {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--gris-claro);
+    border-radius: 16px;
+}
+
+.resumen-pago h3 { margin-top: 0; }
+
+#form-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+/* Inputs Refinados */
+input {
+    padding: 12px 16px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--acento);
+}
+
+.boton-pagar {
+    background-color: var(--acento);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.boton-pagar:hover {
+    opacity: 0.9;
+}
