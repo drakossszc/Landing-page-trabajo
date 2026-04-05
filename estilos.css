@@ -15,10 +15,10 @@ body {
     color: var(--texto);
 }
 
-/* --- Layout Existente --- */
 nav { display: flex; justify-content: space-between; padding: 1.5rem 5%; border-bottom: 1px solid var(--borde); position: sticky; top: 0; background: white; z-index: 10; }
 .logotipo { font-weight: 800; font-size: 1.2rem; }
 .boton-carrito { background: var(--texto); color: white; padding: 0.6rem 1.2rem; border-radius: 25px; border: none; cursor: pointer; }
+.boton-Beneficios { background: var(--texto); color: white; padding: 0.6rem 1.2rem; border-radius: 25px; border: none; cursor: pointer; }
 
 header { padding: 4rem 5%; text-align: center; }
 .productos { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; padding: 0 5% 4rem; max-width: 1200px; margin: 0 auto; }
@@ -41,7 +41,6 @@ header { padding: 4rem 5%; text-align: center; }
 .fila-total { display: flex; justify-content: space-between; font-size: 1.2rem; margin: 1.5rem 0; }
 .boton-pagar { width: 100%; padding: 1rem; background: var(--acento); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
 
-/* --- Modal de Pago --- */
 .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: 200; align-items: center; justify-content: center; }
 .modal.activo { display: flex; }
 .contenido-pago { background: white; width: 90%; max-width: 450px; padding: 2.5rem; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
