@@ -18,11 +18,10 @@ body {
     padding: 40px 20px;
 }
 
-/* Contenedor Principal */
 .contenedor-carrito {
     width: 100%;
-    max-width: 600px; /* Evita que se estire demasiado */
-    background: white;
+    max-width: 600px; 
+    background: rgb(255, 255, 255);
 }
 
 h2 {
@@ -31,7 +30,6 @@ h2 {
     margin-bottom: 2rem;
 }
 
-/* Enlace Volver */
 nav a {
     text-decoration: none;
     color: var(--acento);
@@ -40,7 +38,7 @@ nav a {
     margin-bottom: 2rem;
 }
 
-/* Lista de Productos */
+
 .item-carrito {
     display: flex;
     justify-content: space-between;
@@ -58,7 +56,6 @@ nav a {
     font-weight: 600;
 }
 
-/* Resumen de Pago */
 .resumen-pago {
     margin-top: 3rem;
     padding: 2rem;
@@ -75,7 +72,6 @@ nav a {
     margin-top: 1.5rem;
 }
 
-/* Inputs Refinados */
 input {
     padding: 12px 16px;
     border: 1px solid var(--borde);
