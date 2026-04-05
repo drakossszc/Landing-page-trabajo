@@ -30,8 +30,8 @@ function eliminar(uid) {
 document.getElementById('form-pago').onsubmit = (e) => {
     e.preventDefault();
     alert("¡Gracias por tu compra!");
-    localStorage.removeItem('carrito-usuario'); // Limpiar todo
-    window.location.href = "index.html"; // Regresar al inicio
+    localStorage.removeItem('carrito-usuario'); 
+    window.location.href = "index.html"; 
 };
 
 mostrarCarrito();
