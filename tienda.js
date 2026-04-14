@@ -3,7 +3,7 @@ const productos = [
     { id: 2, titulo: "Calistenia Básica", precio: 20000, icono: "💪" },
     { id: 3, titulo: "Código Limpio", precio: 25000, icono: "💻" },
     {id: 4, titulo: "Pasteleria Básica", precio: 35000, icono: "🍰"},
-    {id: 5, titulo: "Calistenia Intermedia", precio: 48., icono: "⚡"},
+    {id: 5, titulo: "Calistenia Intermedia", precio: 48000, icono: "⚡"},
     {id: 6, titulo: "Cocina Básica", precio: 19000 , icono: "🍽️"},
     {id: 7, titulo: "Calistenia Avanzada", precio: 50000, icono: "🏋️‍♀️"},
     {id: 8, titulo: "Cocina Avanzada", precio: 48000, icono: "👨🏻‍🍳"},
