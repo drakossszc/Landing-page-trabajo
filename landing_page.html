@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSBRY0KLP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RYSBRY0KLP');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina | Tu Próxima Aventura Comienza Aquí</title>
@@ -39,7 +46,7 @@
                         <li>✓ Lectura en 1 dispositivo</li>
                         <li>✓ Sin anuncios</li>
                     </ul>
-                    <a href="index.html" class="btn-plan">Comenzar Prueba</a>
+                    <a href="index.html" class="btn-plan" onclick="gtag('event', 'click_plan_Individual', {'category': 'suscripcion'});"> Verificar ahora</a>
                 </div>
 
                 <div class="plan-card destacado">
@@ -52,7 +59,7 @@
                         <li>✓ Acceso anticipado a estrenos</li>
                         <li>✓ Lectura en 4 dispositivos</li>
                     </ul>
-                    <a href="index.html" class="btn-plan principal">Probar Gratis</a>
+                    <a href="index.html" class="btn-plan principal" onclick="gtag('event', 'click_plan_familiar', {'category': 'suscripcion'});"></a>
                 </div>
 
                 <div class="plan-card">
@@ -62,7 +69,7 @@
                         <li>✓ Todos los beneficios del plan Individual</li>
                         <li>✓ Requiere verificación anual</li>
                     </ul>
-                    <a href="index.html" class="btn-plan">Verificar ahora</a>
+                    <a href="index.html" class="btn-plan"onclick="gtag('event', 'click_plan_Estudiante', {'category': 'suscripcion'});"></a>
                 </div>
 
             </div>
@@ -95,7 +102,7 @@
     <div class="contenedor">
         <h2 class="titulo-seccion">Lo que dicen nuestros lectores</h2>
         <div class="grid-testimonios">
-            <div class="testimonio-card">
+            <div class="testimonio-card">V
                 <p>"Lumina Pass cambió mi forma de estudiar. Tener todos los libros de tech en un solo lugar es increíble."</p>
                 <strong>— Carlos B.</strong>
             </div>
