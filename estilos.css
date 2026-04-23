@@ -54,38 +54,54 @@ header { padding: 4rem 5%; text-align: center; }
 .boton-finalizar { width: 100%; padding: 1rem; background: #00ca72; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-bottom: 0.8rem; }
 .boton-cancelar { width: 100%; background: none; border: none; color: #666; cursor: pointer; }
 
-.seccion-contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f9f9f9; 
-    min-height: 80vh;
-}
 
 .contenedor-form-card {
     background: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
-    max-width: 600px; 
-    width: 100%;
-    text-align: center; 
+    padding: 50px; 
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    max-width: 900px; 
+    width: 95%; 
+    margin: 0 auto;
+    text-align: center;
 }
 
 .contenedor-form-card h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
     margin-bottom: 10px;
-    color: #333;
-    font-family: sans-serif;
+    font-weight: 700;
 }
 
 .contenedor-form-card p {
-    margin-bottom: 30px;
     color: #666;
-    font-size: 0.9rem;
+    margin-bottom: 40px;
 }
 
+
 .hs-form-frame {
-    text-align: left; 
     margin-top: 20px;
+}
+
+.hs-input {
+    border-radius: 8px !important;
+    border: 1px solid #ddd !important;
+    padding: 12px !important;
+    font-size: 16px !important;
+}
+
+
+.hs-button {
+    background-color: #000 !important; 
+    border: none !important;
+    padding: 15px 40px !important;
+    border-radius: 30px !important;
+    font-weight: bold !important;
+    transition: transform 0.2s ease !important;
+    cursor: pointer;
+}
+
+.hs-button:hover {
+    transform: scale(1.05);
+    background-color: #333 !important;
 }
