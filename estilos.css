@@ -31,7 +31,7 @@ header { padding: 4rem 5%; text-align: center; }
 .boton-agregar { width: 100%; padding: 0.8rem; border: 1px solid var(--texto); border-radius: 8px; cursor: pointer; background: white; font-weight: 600; }
 .boton-agregar:hover { background: var(--texto); color: white; }
 
-/* --- Carrito y Botón Eliminar --- */
+
 #panel-carrito { position: fixed; right: -400px; top: 0; width: 380px; height: 100vh; background: white; border-left: 1px solid var(--borde); transition: 0.4s; padding: 2rem; z-index: 100; display: flex; flex-direction: column; }
 #panel-carrito.activo { right: 0; }
 
@@ -53,3 +53,39 @@ header { padding: 4rem 5%; text-align: center; }
 .resumen-final { background: var(--gris); padding: 1rem; border-radius: 8px; text-align: center; font-size: 1.2rem; font-weight: 800; margin-bottom: 1.5rem; }
 .boton-finalizar { width: 100%; padding: 1rem; background: #00ca72; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-bottom: 0.8rem; }
 .boton-cancelar { width: 100%; background: none; border: none; color: #666; cursor: pointer; }
+
+.seccion-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9; 
+    min-height: 80vh;
+}
+
+.contenedor-form-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    width: 100%;
+    text-align: center; 
+}
+
+.contenedor-form-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.contenedor-form-card p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.hs-form-frame {
+    text-align: left; 
+    margin-top: 20px;
+}
