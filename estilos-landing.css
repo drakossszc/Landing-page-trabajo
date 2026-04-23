@@ -376,7 +376,7 @@ details[open] summary .flecha::after {
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #000; /* O el color principal de Lumina */
+    background: #000; 
     color: white;
     width: 40px;
     height: 40px;
