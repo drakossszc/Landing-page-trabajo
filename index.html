@@ -1,58 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K3DPLKS6');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <title>Rumina | Tienda</title>
-    <link rel="stylesheet" href="estilos.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSBRY0KLP"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSBRY0KLP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-RYSBRY0KLP');
 </script>
-<script src="https://t.contentsquare.net/uxa/d59cfdc120b96.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumina | Tu Próxima Aventura Comienza Aquí</title>
+    <link rel="stylesheet" href="estilos-landing.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3DPLKS6"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <nav>
-        <div class="logotipo">RUMINA E-BOOKS</div>
-        <a href="carrito.html" class="boton-carrito" onclick="gtag('event', 'view_cart', {'method': 'nav_bar'});">Ver mi Carrito (<span id="contador">0</span>)</a>
-        <a href="landing_page.html" class="boton-Beneficios" onclick="gtag('event', 'click_beneficios', {'location': 'nav_bar'});">Ver Beneficios</a>
+
+    <nav class="nav-transparente">
+        <div class="logotipo">RUMINA</div>
+        <div class="nav-links">
+            <a href="index.html" class="cta-secundario">Ir a la Tienda</a>
+        </div>
     </nav>
 
-    <header>
-        <h1>Tu biblioteca digital.</h1>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Nuevos Lanzamientos 2026</span>
+            <h1>Libros digitales que transforman tu realidad.</h1>
+            <p>Acceso instantáneo a las mentes más brillantes en cocina, fitness y tecnología. Sin esperas, sin papel, solo conocimiento puro.</p>
+            <div class="hero-btns">
+                <a href="index.html" class="cta-principal">Explorar Catálogo</a>
+                <a href="#beneficios" class="link-texto">Saber más ↓</a>
+            </div>
+        </div>
     </header>
+    <section id="planes" class="seccion-planes">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Elige el plan ideal para ti</h2>
+            <div class="grid-planes">
+                
+                <div class="plan-card">
+                    <h3>Individual</h3>
+                    <div class="precio">$9.99<span>/mes</span></div>
+                    <ul class="lista-beneficios">
+                        <li>✓ Acceso a 5,000+ E-books</li>
+                        <li>✓ Lectura en 1 dispositivo</li>
+                        <li>✓ Sin anuncios</li>
+                    </ul>
+                    <a href="index.html" class="btn-plan" onclick="gtag('event', 'click_plan_Individual', {'category': 'suscripcion'});">Obtener beneficios</a>
+                </div>
 
-    <main class="productos" id="lista-productos"></main>
+                <div class="plan-card destacado">
+                    <div class="popular-tag">Más Popular</div>
+                    <h3>Familiar</h3>
+                    <div class="precio">$14.99<span>/mes</span></div>
+                    <ul class="lista-beneficios">
+                        <li>✓ Hasta 5 cuentas individuales</li>
+                        <li>✓ Descargas offline ilimitadas</li>
+                        <li>✓ Acceso anticipado a estrenos</li>
+                        <li>✓ Lectura en 4 dispositivos</li>
+                    </ul>
+                    <a href="index.html" class="btn-plan principal" onclick="gtag('event', 'click_plan_familiar', {'category': 'suscripcion'});">Obtener beneficios (Prueba Gratuita)</a>
+                </div>
 
-    <script src="tienda.js"></script>
-    <hr>
-    <section class="seccion-contacto" style="background-color: #f4f7f6; padding: 100px 0;">
-    <div class="contenedor-form-card">
-        <h2>Ponte en contacto</h2>
-        <p>¿Tienes dudas? Nuestro equipo de Rumina te responderá en menos de 24 horas.</p>
+                <div class="plan-card">
+                    <h3>Estudiante</h3>
+                    <div class="precio">$4.99<span>/mes</span></div>
+                    <ul class="lista-beneficios">
+                        <li>✓ Todos los beneficios del plan Individual</li>
+                        <li>✓ Requiere verificación anual</li>
+                    </ul>
+                    <a href="index.html" class="btn-plan"onclick="gtag('event', 'click_plan_Estudiante', {'category': 'suscripcion'});">Obtener beneficios</a>
+                </div>
+
+            </div>
+            <p class="nota-pie">Después del periodo de prueba, se aplicará el cobro mensual. Cancela en cualquier momento desde tu perfil.</p>
+        </div>
+    </section>
+
+    <section id="beneficios" class="seccion-blanca">
+        <div class="contenedor">
+            <div class="grid-beneficios">
+                <div class="beneficio-card">
+                    <div class="icono">⚡</div>
+                    <h3>Lectura Instantánea</h3>
+                    <p>Compra y descarga en menos de 30 segundos. Compatible con Kindle, iPad y Android.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="icono">🌱</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Cero papel, cero huella de carbono. Tu biblioteca entera en la palma de tu mano.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="icono">💎</div>
+                    <h3>Calidad Premium</h3>
+                    <p>Contenido curado por expertos y diseño editorial optimizado para pantallas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explicacion" class="seccion-explicacion">
+    <div class="contenedor">
+        <h2 class="titulo-seccion">¿Cómo funciona Rumina?</h2>
+        <p class="subtitulo-seccion">Tu próxima lectura en solo tres pasos</p>
         
-        <script src="https://js.hsforms.net/forms/embed/51380711.js" defer></script>
-        <div class="hs-form-frame" 
-             data-region="na1" 
-             data-form-id="34f5215d-7d9f-41e8-9b78-81fe3473d02f" 
-             data-portal-id="51380711">
+        <div class="grid-pasos">
+            <div class="paso-card">
+                <div class="paso-numero">1</div>
+                <div class="paso-icono">🔍</div>
+                <h3>Explora el Catálogo</h3>
+                <p>Navega entre miles de títulos curados por expertos en tecnología, bienestar y cocina.</p>
+            </div>
+
+            <div class="paso-card">
+                <div class="paso-numero">2</div>
+                <div class="paso-icono">💳</div>
+                <h3>Elige tu Plan</h3>
+                <p>Compra un libro individual o suscríbete a un plan para acceso ilimitado a toda la biblioteca.</p>
+            </div>
+
+            <div class="paso-card">
+                <div class="paso-numero">3</div>
+                <div class="paso-icono">📱</div>
+                <h3>Lee donde sea</h3>
+                <p>Descarga en segundos y disfruta de tus lecturas en Kindle, tablet o smartphone, incluso offline.</p>
+            </div>
         </div>
     </div>
 </section>
+    <section class="seccion-testimonios">
+    <div class="contenedor">
+        <h2 class="titulo-seccion">Lo que dicen nuestros lectores</h2>
+        <div class="grid-testimonios">
+            <div class="testimonio-card">V
+                <p>"Rumina Pass cambió mi forma de estudiar. Tener todos los libros de tech en un solo lugar es increíble."</p>
+                <strong>— Carlos B.</strong>
+            </div>
+            <div class="testimonio-card">
+                <p>"La interfaz es tan limpia que solo te concentras en leer. Los planes familiares valen totalmente la pena."</p>
+                <strong>— Elena R.</strong>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta-intermedio">
+    <div class="contenedor-trigger">
+        <h3>¿Aún no te decides?</h3>
+        <p>Únete hoy y obtén acceso a los lanzamientos exclusivos de Abril 2026 antes que nadie.</p>
+        <a href="#planes" class="cta-principal">Empezar mi prueba gratis</a>
+    </div>
+</section>
+        <section class="seccion-faq">
+    <div class="contenedor-faq">
+        <h2>Respuestas a tus preguntas</h2>
+        
+        <div class="lista-acordeon">
+            <details>
+                <summary>¿Es seguro comprar en Rumina? <span class="flecha"></span></summary>
+                <div class="contenido">
+                    <p>Absolutamente. Utilizamos encriptación de extremo a extremo para procesar tus pagos. No guardamos los datos de tu tarjeta en nuestros servidores; todo se gestiona a través de pasarelas de pago certificadas internacionalmente.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿Siempre hay disponibilidad para comprar libros? <span class="flecha"></span></summary>
+                <div class="contenido">
+                    <p>¡Sí! Al ser productos digitales (E-books), el stock es ilimitado. Una vez que te suscribes o realizas una compra, el acceso es instantáneo y garantizado las 24 horas del día.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿Puedo leer mis E-books sin conexión a internet? <span class="flecha"></span></summary>
+                <div class="contenido">
+                    <p>Con Rumina Pass, puedes descargar tus libros favoritos directamente en nuestra aplicación para leerlos en el avión, el metro o cualquier lugar sin necesidad de Wi-Fi.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿Cómo cancelo mi suscripción? <span class="flecha"></span></summary>
+                <div class="contenido">
+                    <p>Puedes cancelar en cualquier momento desde la configuración de tu perfil. Seguirás teniendo acceso a la biblioteca hasta que termine tu periodo de facturación actual.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="ayuda-extra">
+            <p>¿Tienes más preguntas? <a href="#">Visita el Centro de Ayuda de Rumina</a></p>
+        </div>
+    </div>
+    </section>
+
+    <section class="seccion-oscura">
+        <div class="contenedor">
+            <h2>¿Listo para empezar a leer?</h2>
+            <p>Únete a más de 10,000 lectores digitales hoy mismo.</p>
+            <a href="index.html" class="cta-principal">Ver E-Books Ahora</a>
+        </div>
+    </section>
+    <footer class="footer-principal">
+    <div class="contenedor-footer">
+        <div class="footer-info">
+            <div class="logotipo">RUMINA E-BOOKS</div>
+            <p>Transformando la lectura digital desde 2026.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Producto</h4>
+            <a href="#planes">Planes</a>
+            <a href="index.html">Biblioteca</a>
+            <a href="#">App Móvil</a>
+        </div>
+        <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Cookies</a>
+        </div>
+    </div>
+    <div class="footer-copy">
+        &copy; 2026 Rumina E-books. Todos los derechos reservados.
+    </div>
+</footer>
 </body>
 </html>
